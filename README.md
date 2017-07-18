@@ -29,7 +29,7 @@ Removal
 Bug Reports
 -----------
 
-This software comes with no support or implied warrenty. I do not accept bug reports, but I welcome pull requests that fix bugs should you have found any. You may also submit pull requests for adding information to this readme file, or contact my privately via the email address on my GitHub profile.
+This software comes with no support or implied warrenty. I welcome pull requests that fix bugs should you have found any. You may also submit pull requests for adding information to this readme file, or contact my privately via the email address on my GitHub profile.
 
 Legal
 -----
