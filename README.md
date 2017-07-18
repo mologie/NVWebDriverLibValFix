@@ -17,7 +17,7 @@ Installation (from source)
 
 Install Xcode, then `./install.sh`.
 
-On success, you should see a message from 'DisableLibraryValidation' in the output of `sudo dmesg` and find 'com.apple.kext.mologie.DisableLibraryValidation' in the output of `kextstat`.
+On success, you should see a message from 'NVWebDriverLibValFix' in the output of `sudo dmesg` and find 'com.apple.kext.mologie.NVWebDriverLibValFix' in the output of `kextstat`.
 
 The patches take effect immediately, but you should log out and back in to make sure that all processes benefit from them.
 
@@ -29,7 +29,7 @@ Removal
 Bug Reports
 -----------
 
-This software comes with no support or implied warrenty. I welcome pull requests that fix bugs should you have found any. You may also submit pull requests for adding information to this readme file, or contact my privately via the email address on my GitHub profile.
+This software comes with no support or implied warrenty. I welcome pull requests that fix bugs should you have found any. You may also submit pull requests for adding information to this readme file, or contact me privately via the email address on my GitHub profile.
 
 Legal
 -----
