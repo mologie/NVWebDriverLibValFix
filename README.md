@@ -8,7 +8,7 @@ In comparison to my previous solution to this problem, [DisableLibraryValidation
 Installation
 ------------
 
-The latest release and installation instructions  are available on the [Releases Page](https://github.com/mologie/NVWebDriverLibVal/releases).
+The latest release and installation instructions  are available on the [Releases Page](https://github.com/mologie/NVWebDriverLibValFix/releases).
 
 All releases are unsigned and require kernel code signing to be disabled (`csrutil enable --without kext`).
 
