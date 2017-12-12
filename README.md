@@ -1,19 +1,21 @@
 NVWebDriverLibValFix.kext
 =========================
 
-This macOS kernel exstension modifies macOS to recognize NVIDIA's web drivers as platform binaries. This resolves the issue with transparent windows without content, which appear for applications that use Metal and have Library Validation enabled. Common affected applications are iBooks and Little Snitch Network Monitor, though this patch is universal and fixes them all.
+This macOS kernel exstension modifies macOS Sierra to recognize NVIDIA's web drivers as platform binaries. This resolves the issue with transparent windows without content, which appear for applications that use Metal and have Library Validation enabled. Common affected applications are iBooks and Little Snitch Network Monitor, though this patch is universal and fixes them all.
 
-In comparison to my previous solution to this problem, [DisableLibraryValidation.kext](https://github.com/mologie/macos-disable-library-validation), this fix is specifically tailored to NVIDIA's web driver and does *not* nuke any security features.
+**Users of macOS 10.13 High Sierra no longer need this patch,** because the underlying issue that it tackled was solved. You can uninstall this extension before or after upgrading, it won't break things. 🎉
 
 Installation
 ------------
 
 The latest release and installation instructions  are available on the [Releases Page](https://github.com/mologie/NVWebDriverLibValFix/releases).
 
-All releases are unsigned and require kernel code signing to be disabled (`csrutil enable --without kext`).
+All releases are unsigned and require kernel code signing to be disabled. Hackintoshs tend to have kernel code signing disabled by default. On Apple Macs, follow Apple's [guide to using csrutil](https://developer.apple.com/library/content/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html), but enter the command `csrutil enable --without kext` instead.
 
 Installation (from source)
 --------------------------
+
+It is recommended that you install from the 'Releases' page like described in the previous section. Install from source only if you wish to make modifications to this driver.
 
 Install Xcode, then `./install.sh`.
 
